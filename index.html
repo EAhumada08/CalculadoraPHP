@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para calculadora</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <form action="calcular.php" method="post">
+        <div class="row g-3">
+<div class="col-3"></div>
+        
+        <div class="ms-5 mt-5 col-6 row g-3 p-2 d-flex justify-content-center" id="contenedor">
+
+            <div class="col-3">
+                <label for="v1" class="form-label">Ingrese el primer número</label>
+                <input class="form-control" type="text" name="valor1" id="v1">
+            </div>
+
+            <br>
+
+            <div class="col-3">
+                <label for="v2" class="form-label">Ingrese el segundo número</label>
+                <input class="form-control" type="text" name="valor2" id="v2">
+            </div>
+
+            <br>
+
+            <div class="mt-5">
+
+                <div class="form-check ">
+                    <label for="r1" class="form-check-label"> Sumar </label>
+                    <input type="radio" name="radio1" value="suma" id="r1" class="form-check-input">
+                </div>
+
+                <div class="form-check ">
+                    <label for="r2" class="form-check-label"> Restar </label>
+                    <input class="form-check-input" type="radio" name="radio1" value="resta" id="r2">
+                </div>
+
+                <div class="form-check">
+                    <label for="r3" class="form-check-label"> Multiplicar </label>
+                    <input class="form-check-input" type="radio" name="radio1" value="multiplicacion" id="r3">
+                </div>
+
+                <div class="form-check">
+                    <label for="r4" class="form-check-label"> Dividir </label>
+                    <input class="form-check-input" type="radio" name="radio1" value="division" id="r4">
+                </div>
+            </div>
+
+            <div class="col-3 ms-5 mt-5">
+                <input type="submit" name="operar" class="btn btn-outline-danger">
+            </div>
+
+        </div>
+        <div class="col-3"></div>
+    </div>
+    </form>
+</body>
+
+</html>
